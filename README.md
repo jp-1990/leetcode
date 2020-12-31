@@ -13,3 +13,7 @@ Using Kadane's algorithm to keep track of the 'global maximum value' by replacin
 
 **Divide and Conquer**  
 Using recursion to split the array into a left, right, and center section, then find the maximum sum from each. They are then compared and the max of the three is returned recursively. This specific solution runs in O(nlog(n)) time as it operates on the same recursive principle as merge sort. A short paper from the University of Texas suggests changes to this method to make it competitive with Kadane's algorithm, and running in O(n) time. (https://personal.utdallas.edu/~daescu/maxsa.pdf)
+
+## Add Two Binary Strings (\#67)
+
+Given two binary strings, return their sum as a binary string. O(n) solution which uses a simple addition with carrying approach, based on the knowledge that (including carried values) the sum of each pair of indexes can only be 0, 1, 2 or 3.
