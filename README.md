@@ -17,3 +17,7 @@ Using recursion to split the array into a left, right, and center section, then 
 ## Add Two Binary Strings (\#67)
 
 Given two binary strings, return their sum as a binary string. O(n) solution which uses a simple addition with carrying approach, based on the knowledge that (including carried values) the sum of each pair of indexes can only be 0, 1, 2 or 3.
+
+## Climbing Stairs (\#70)
+
+You are climbing stairs, it takes n steps to reach the top. Each time you step you can either climb 1 or 2 steps, in how many distinct ways can you reach the top. On closer inspection, the number of distinct combinations of steps for n is equal to those of n-1+n-2 (e.g. n=4 output=5, n=3 output=3, n=2 output=2. 2+3=5). This is the same pattern followed by the Fibonacci sequence. This problem is essentially asking; Find the nth Fibonacci number. Solved in O(n) by building the sequence and returning the nth index.
