@@ -20,4 +20,8 @@ Given two binary strings, return their sum as a binary string. O(n) solution whi
 
 ## Climbing Stairs (\#70)
 
-You are climbing stairs, it takes n steps to reach the top. Each time you step you can either climb 1 or 2 steps, in how many distinct ways can you reach the top. On closer inspection, the number of distinct combinations of steps for n is equal to those of n-1+n-2 (e.g. n=4 output=5, n=3 output=3, n=2 output=2. 2+3=5). This is the same pattern followed by the Fibonacci sequence. This problem is essentially asking; Find the nth Fibonacci number. Solved in O(n) by building the sequence and returning the nth index.
+You are climbing stairs, it takes n steps to reach the top. Each time you step you can either climb 1 or 2 steps, in how many distinct ways can you reach the top? On closer inspection, the number of distinct combinations of steps for n is equal to those of n-1+n-2 (e.g. n=4 output=5, n=3 output=3, n=2 output=2. 2+3=5). This is the same pattern followed by the Fibonacci sequence. This problem is essentially asking; Find the nth Fibonacci number. Solved in O(n) by building the sequence and returning the nth index.
+
+## Longest Substring Without Repeating Characters (\#3)
+
+Given a string, s, find the length of the longest substring without repeating characters. Similar to the maximum subarray problem, and can be solved in a similar way in O(n) time. This can be achieved by looping over the string once, and keeping track of the start and end of a range of letters, increasing the range by 1 each time to the right. If the next included letter is already in the string, then move the left bound up to that letter. If the string range length is greater than any string range length seen so far, replace that value with the new greatest value. (Sliding window approach).
